@@ -1,7 +1,6 @@
-import Header from "../Header/header";
-import HomePage from "../HomePage/homePage";
-import Skills from "../Skills/skills";
-import PortfolioSec from "../portfolioSec/portfolioSection";
+import Header from "../components/Header/header";
+import HomePage from "../components/HomePage/homePage";
+import PortfolioSec from "../components/portfolioSec/portfolioSection";
 import { styled } from "styled-components";
 
 const MainStyled = styled.main`
@@ -14,7 +13,6 @@ function Portfolio() {
         <Header/>
         <MainStyled>
         <HomePage/>
-        <Skills/>
         <PortfolioSec/>
         </MainStyled>
         </>

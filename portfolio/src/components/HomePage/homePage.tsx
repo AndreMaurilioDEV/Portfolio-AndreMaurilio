@@ -1,31 +1,31 @@
-import Button from "../Button/button";
+import { styledHome } from "./styleMain";
 
 function HomePage () {
     return (
         <>
-        <section>
-            <div>
-                <div>
-                    <img src="" alt="" />
-                </div>
-                <div>
-                    <div>
-                        <h3>Olá, me chamo</h3>
-                        <h2>André Maurilio</h2>
-                    </div>
-                    <div>
+        <styledHome.sectionHome>
+            <styledHome.flexMain>
+                <styledHome.imgBox>
+                </styledHome.imgBox>
+                <styledHome.contentMain>
+                    <styledHome.textsMain>
+                        <styledHome.h3Main>Olá, me chamo</styledHome.h3Main>
+                        <styledHome.h2Main>André Maurilio</styledHome.h2Main>
+                        <styledHome.h4Main>Frontend Developer</styledHome.h4Main>
+                    </styledHome.textsMain>
+                    <styledHome.buttonsMain>
+                        <styledHome.flexButton>
+                            <styledHome.buttonHome>Contrate-me</styledHome.buttonHome>
+                            <styledHome.buttonHome>Download CV</styledHome.buttonHome>
+                        </styledHome.flexButton>
+                    </styledHome.buttonsMain>
+                    <styledHome.linksMain>
                         <span>linkedin</span>
                         <span>github</span>
-                    </div>
-                    <div>
-                        <div>
-                            <Button>Contrate-me</Button>
-                            <Button>Download CV</Button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+                    </styledHome.linksMain>
+                </styledHome.contentMain>
+            </styledHome.flexMain>
+        </styledHome.sectionHome>
         </>
     )
 }
