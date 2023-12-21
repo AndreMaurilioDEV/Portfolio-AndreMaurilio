@@ -1,6 +1,7 @@
 import Header from "../components/Header/header";
 import HomePage from "../components/HomePage/homePage";
-import PortfolioSec from "../components/portfolioSec/portfolioSection";
+import PortfolioSec from "../components/Projetos";
+import About from "../components/about";
 import { styled } from "styled-components";
 
 const MainStyled = styled.main`
@@ -13,6 +14,7 @@ function Portfolio() {
         <Header/>
         <MainStyled>
         <HomePage/>
+        <About />
         <PortfolioSec/>
         </MainStyled>
         </>

@@ -27,19 +27,19 @@ const contentMain = styled.div`
 
 const h3Main = styled.h3`
     font-size: 1rem;
-    color: gray;
+    color: #515151;
     text-align: center;
 `
 
 const h2Main = styled.h2`
-    font-size: 2.8rem;
+    font-size: 3rem;
     margin: 10px 0px;
     text-align: center;
 `
 
 const h4Main = styled.h4`
     font-size: 1.8rem;
-    color: gray;
+    color: #515151;
     text-align: center;
 `
 
@@ -69,7 +69,19 @@ const buttonHome = styled.button`
     font-weight: 500;
 `
 
+const buttonHomeWithBackground = styled(buttonHome)`
+    background-color: #515151;
+    color: white;
+    font-weight: 600;
+    border: 1.5px solid #515151;
+
+`
+
 const textsMain = styled.div`
+`
+
+const spanMain = styled.span`
+    font-size: 2rem;
 `
 export const styledHome = {
     flexMain,
@@ -84,4 +96,6 @@ export const styledHome = {
     h2Main,
     flexButton,
     buttonHome,
+    spanMain,
+    buttonHomeWithBackground,
 };

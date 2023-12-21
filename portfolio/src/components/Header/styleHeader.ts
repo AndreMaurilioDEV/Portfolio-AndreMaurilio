@@ -15,7 +15,7 @@ const FlexHeader = styled.div`
 const LogoHeader = styled.div`
 `
 const TitleHeader = styled.h1`
-    font-size: 1.8rem;
+    font-size: 2.1rem;
     font-weight: 400;
 `
 
@@ -31,6 +31,13 @@ const UL = styled.ul`
 const LI = styled.li`
     list-style-type: none;
     font-size: 1.4rem;
+    padding: 20px 0px;
+    border-bottom: 3px solid transparent;
+
+    &:hover {
+        border-bottom: 3px solid #515151;
+        transition: border-bottom-color 0.8s ease;
+    }
 `
 
 export const StyledHeader = {
