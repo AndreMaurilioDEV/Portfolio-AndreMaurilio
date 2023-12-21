@@ -1,4 +1,5 @@
 import { StyledHeader } from "./styleHeader";
+import LinkHook from "../linkHook";
 
 function Header() {
     return (
@@ -6,15 +7,15 @@ function Header() {
             <StyledHeader.Header>
                 <StyledHeader.FlexHeader>
                     <StyledHeader.LogoHeader>
-                        <StyledHeader.TitleHeader>AndréMaurilioDEV</StyledHeader.TitleHeader>
+                        <StyledHeader.TitleHeader>André Maurilio</StyledHeader.TitleHeader>
                     </StyledHeader.LogoHeader>
                     <StyledHeader.NavHeader>
                         <StyledHeader.UL>
-                            <StyledHeader.LI>Ínicio</StyledHeader.LI>
-                            <StyledHeader.LI>Sobre</StyledHeader.LI>
-                            <StyledHeader.LI>Especialidades</StyledHeader.LI>
-                            <StyledHeader.LI>Projetos</StyledHeader.LI>
-                            <StyledHeader.LI>Contato</StyledHeader.LI>
+                            <StyledHeader.LI><LinkHook url="#">Ínicio</LinkHook></StyledHeader.LI>
+                            <StyledHeader.LI><LinkHook url="#">Sobre</LinkHook></StyledHeader.LI>
+                            <StyledHeader.LI><LinkHook url="#">Especialidades</LinkHook></StyledHeader.LI>
+                            <StyledHeader.LI><LinkHook url="#">Projetos</LinkHook></StyledHeader.LI>
+                            <StyledHeader.LI><LinkHook url="#">Contato</LinkHook></StyledHeader.LI>
                         </StyledHeader.UL>
                     </StyledHeader.NavHeader>
                 </StyledHeader.FlexHeader>
