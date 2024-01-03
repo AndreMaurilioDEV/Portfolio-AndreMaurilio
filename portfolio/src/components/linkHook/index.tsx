@@ -1,14 +1,29 @@
 import { ReactNode } from "react";
+//import { Link } from "react-router-dom";
+import {Link} from 'react-scroll';
 
 type LinkHookProps = {
-    url: string;
+    to: string;
+    spy: boolean;
+    smooth: boolean;
+    duration: number;
+    offset: number;
     children: ReactNode;
     targetLink?: string
 }
 
-function LinkHook ({url, children, targetLink}: LinkHookProps) {
+function LinkHook ({to, spy, smooth, duration, offset,  children, targetLink}: LinkHookProps) {
     return (
-        <a href={url} target={targetLink}>{children}</a>
+        <Link 
+        to={to} 
+        target={targetLink}
+        spy={spy}
+        offset={offset}
+        smooth={smooth}
+        duration={duration}
+        >
+            {children}
+        </Link>
     )
 };
 

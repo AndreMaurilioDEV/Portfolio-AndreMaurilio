@@ -3,30 +3,33 @@ import { styled } from "styled-components";
 const sectionAbout = styled.section`
     height: 100vh;
     text-align: center;
+    background: black;
+    padding-top: 110px;
 `
 
 const subTitleAbout = styled.h3`    
     font-weight: 400;
     font-size: 1.1rem;
     margin-bottom: 10px;
-    color: #515151;
+    color: #d9d9d9;
 `
 
 const titleAbout = styled.h2`    
     font-size: 2.5rem;
+    color: #666af6;
 `
 
-const flexAbout = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
+const containerAbout = styled.div`
+  margin: 0 auto;
 `
 
 const contentAbout = styled.div`
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    gap: 50px;
     width: 1500px;
+    
 `
 
 const containerIMG = styled.div`
@@ -38,13 +41,17 @@ const imgAbout = styled.img`
 `
 
 const descriptionAbout = styled.p`
-    text-align: center;
     font-weigth: 400;
-    color: #515151;
+    color: #d9d9d9;
+`
+
+const containerDescription = styled.div `
+    display: flex;
+    align-items: center;
 `
 
 export const StyledAbout = {
-    flexAbout,
+    containerAbout,
     contentAbout,
     sectionAbout,
     containerIMG,
@@ -52,4 +59,5 @@ export const StyledAbout = {
     subTitleAbout,
     titleAbout,
     descriptionAbout,
+    containerDescription,
 }

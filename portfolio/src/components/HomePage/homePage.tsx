@@ -1,24 +1,31 @@
 import { styledHome } from "./styleMain";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import LinkHook from "../linkHook";
+import LinkHookRouter from "../linkHookRouter";
+import { motion } from "framer-motion";
 
 function HomePage () {
     return (
         <>
-        <styledHome.sectionHome>
+        <styledHome.sectionHome id='home'>
             <styledHome.flexMain>
 
                 <styledHome.imgBox>
                 </styledHome.imgBox>
-                
+            
+                 <motion.div
+                    initial={{opacity: 0, x: -500}}
+                    whileInView={{opacity: 1, x: 1}}
+                    exit={{opacity: 0, x: -1000}}
+                    transition={{duration: 0.5}}
+                    >
                 <styledHome.contentMain>
 
+                   
                     <styledHome.textsMain>
                         <styledHome.h3Main>Olá, me chamo</styledHome.h3Main>
                         <styledHome.h2Main>André Maurilio</styledHome.h2Main>
                         <styledHome.h4Main>Frontend Developer</styledHome.h4Main>
                     </styledHome.textsMain>
+                    
 
                     <styledHome.buttonsMain>
                         <styledHome.flexButton>
@@ -29,25 +36,26 @@ function HomePage () {
 
                     <styledHome.linksMain>
                         <styledHome.spanMain>
-                            <LinkHook 
-                                url="https://www.linkedin.com/in/andremaurilio/" 
+                            <LinkHookRouter 
+                                to="https://www.linkedin.com/in/andremaurilio/" 
                                 targetLink="_blank">
-                                <FaLinkedin />
-                            </LinkHook>
+                                <styledHome.styledIconLinkedin />
+                            </LinkHookRouter>
                         </styledHome.spanMain>
 
                         <styledHome.spanMain>
 
-                            <LinkHook 
-                                url="https://github.com/AndreMaurilioDEV" 
+                            <LinkHookRouter 
+                                to="https://github.com/AndreMaurilioDEV" 
                                 targetLink="_blank">
-                                <FaGithub />
-                            </LinkHook>
+                                <styledHome.styledIconGitHub />
+                            </LinkHookRouter>
                         </styledHome.spanMain>
 
                     </styledHome.linksMain>
 
                 </styledHome.contentMain>
+                </motion.div>
             </styledHome.flexMain>
         </styledHome.sectionHome>
         </>

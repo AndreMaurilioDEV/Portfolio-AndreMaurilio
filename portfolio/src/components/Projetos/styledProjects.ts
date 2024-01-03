@@ -1,14 +1,13 @@
 import { styled } from "styled-components";
 
 const sectionProjetos = styled.section`
-    text-align: center;
-    height: 92vh;
-    margin-top: 100px;
+    height: 100vh;
+    background-color: black;
 `
 
-const flexContainer = styled.div`
-    display: flex;
-    justify-content: center;
+const gridContainer = styled.div`
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     gap: 50px;
 `
 
@@ -18,13 +17,19 @@ const sectionContainer = styled.div`
     height: 100%;
     align-items: center;
     flex-direction: column;
+    gap: 70px;
 `
 
 const card = styled.article`
     height: 520px;
     width: 400px;
     border-radius: 25px;
-    border: 1px solid #515151
+    border: 1px solid #515151;
+    &:hover {
+        transition: all 0.8s ease; 
+        transform: scale(1.08);
+        cursor: pointer;
+    }
 `
 
 const divIMG = styled.div`
@@ -51,6 +56,7 @@ const linkContainer = styled.div`
 
 const titleProject = styled.h3`
     font-size: 1.7rem;
+    color: white;
 `
 
 const buttonProject = styled.button`
@@ -59,11 +65,37 @@ const buttonProject = styled.button`
     border: 1px solid #515151;
     outline: 0;
     padding: 15px 20px;
-    font-weight: 500;
+    font-weight: 700;
+    &:hover {
+        transition: all 0.4s ease;
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+`
+
+const buttonProjectBackground = styled(buttonProject)`
+    background-color: #666af6;
+    color: white;
+`
+
+const topSection = styled.div`
+`
+
+const titleSection = styled.h3`
+    font-weight: 400;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #d9d9d9;
+`
+
+const descriptionSection = styled.h2`
+    text-align: center;
+    font-size: 2.5rem;
+    color: #666af6;
 `
 
 export const styledProjetos = {
-    flexContainer,
+    gridContainer,
     card,
     divIMG,
     flexContentCard,
@@ -71,5 +103,9 @@ export const styledProjetos = {
     sectionProjetos,
     sectionContainer,
     titleProject,
-    buttonProject
+    buttonProject,
+    topSection,
+    titleSection,
+    descriptionSection,
+    buttonProjectBackground
 }

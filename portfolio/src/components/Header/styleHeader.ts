@@ -2,7 +2,10 @@ import { styled } from "styled-components";
 
 const Header = styled.header`
     height: 100px;
-    //background: #f5f5f5;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
 `
 
 const FlexHeader = styled.div`
@@ -16,11 +19,17 @@ const LogoHeader = styled.div`
 `
 const TitleHeader = styled.h1`
     font-size: 2.1rem;
-    font-weight: 400;
+    font-weight: 800;
+    color: #666af6;
 `
 
 const NavHeader = styled.div`
 
+`
+
+const spanHeader = styled.span`
+    color: white;
+    font-weight: 400;
 `
 
 const UL = styled.ul`
@@ -33,11 +42,19 @@ const LI = styled.li`
     font-size: 1.4rem;
     padding: 20px 0px;
     border-bottom: 3px solid transparent;
-
     &:hover {
         border-bottom: 3px solid #515151;
         transition: border-bottom-color 0.8s ease;
+        color: white;
     }
+
+    a {
+        color: #d9d9d9;
+        text-decoration: none;
+        &:hover {
+          color: #666af6;
+        }
+      }
 `
 
 export const StyledHeader = {
@@ -47,5 +64,6 @@ export const StyledHeader = {
     NavHeader,
     UL,
     LI,
-    TitleHeader
+    TitleHeader,
+    spanHeader,
 };

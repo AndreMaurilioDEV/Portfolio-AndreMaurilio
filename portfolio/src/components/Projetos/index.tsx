@@ -3,13 +3,13 @@ import { styledProjetos } from "./styledProjects";
 function PortfolioSec() {
     return (
         <>
-        <styledProjetos.sectionProjetos>
-            <div>
-            <h3>Navegue meus recentes</h3>
-            <h2>Projetos</h2>
-            </div>
+        <styledProjetos.sectionProjetos id='projetos'>
             <styledProjetos.sectionContainer>
-            <styledProjetos.flexContainer>
+            <styledProjetos.topSection>
+            <styledProjetos.titleSection>Navegue meus recentes</styledProjetos.titleSection>
+            <styledProjetos.descriptionSection>Projetos</styledProjetos.descriptionSection>
+            </styledProjetos.topSection>
+            <styledProjetos.gridContainer>
                 <styledProjetos.card>
                     <styledProjetos.flexContentCard>
                     <styledProjetos.divIMG>
@@ -18,7 +18,7 @@ function PortfolioSec() {
                     <div> <styledProjetos.titleProject>Title Portfolio</styledProjetos.titleProject></div>
                     <styledProjetos.linkContainer>
                         <div><styledProjetos.buttonProject>GitHub Link</styledProjetos.buttonProject></div>
-                        <div><styledProjetos.buttonProject>Live Demo</styledProjetos.buttonProject></div>
+                        <div><styledProjetos.buttonProjectBackground>Live Demo</styledProjetos.buttonProjectBackground></div>
                     </styledProjetos.linkContainer>
                     </styledProjetos.flexContentCard>
                 </styledProjetos.card>
@@ -31,7 +31,7 @@ function PortfolioSec() {
                     <div> <styledProjetos.titleProject>Title Portfolio</styledProjetos.titleProject></div>
                     <styledProjetos.linkContainer>
                         <div><styledProjetos.buttonProject>GitHub</styledProjetos.buttonProject></div>
-                        <div><styledProjetos.buttonProject>Live Demo</styledProjetos.buttonProject></div>
+                        <div><styledProjetos.buttonProjectBackground>Live Demo</styledProjetos.buttonProjectBackground></div>
                     </styledProjetos.linkContainer>
                     </styledProjetos.flexContentCard>
                 </styledProjetos.card>
@@ -44,12 +44,12 @@ function PortfolioSec() {
                     <div> <styledProjetos.titleProject>Title Portfolio</styledProjetos.titleProject></div>
                     <styledProjetos.linkContainer>
                         <div><styledProjetos.buttonProject>GitHub Link</styledProjetos.buttonProject></div>
-                        <div><styledProjetos.buttonProject>Live Demo</styledProjetos.buttonProject></div>
+                        <div><styledProjetos.buttonProjectBackground>Live Demo</styledProjetos.buttonProjectBackground></div>
                     </styledProjetos.linkContainer>
                     </styledProjetos.flexContentCard>
                 </styledProjetos.card>
 
-            </styledProjetos.flexContainer>
+            </styledProjetos.gridContainer>
             </styledProjetos.sectionContainer>
         </styledProjetos.sectionProjetos>
         </>
