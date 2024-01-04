@@ -1,10 +1,23 @@
 import { StyledHeader } from "./styleHeader";
 import LinkHook from "../linkHook";
+import { motion } from "framer-motion";
 
 function Header() {
     return (
         <>
-            <StyledHeader.Header>
+        <motion.header
+        style={{
+            height: '100px',
+            position: 'fixed',
+            top: '0',
+            width: '100%',
+            backgroundColor: 'black',
+            zIndex: '1000',
+        }}
+        initial={{top: -100}}
+        animate={{top: 0}}
+        transition={{duration: 0.8}}
+        >
                 <StyledHeader.FlexHeader>
                     <StyledHeader.LogoHeader>
                         <StyledHeader.TitleHeader> <StyledHeader.spanHeader>André</StyledHeader.spanHeader>Maurilio</StyledHeader.TitleHeader>
@@ -59,7 +72,7 @@ function Header() {
 
                             <StyledHeader.LI>
                                 <LinkHook 
-                                to="#"
+                                to="contato"
                                 spy={true}
                                 smooth={true}
                                 offset={0}
@@ -70,7 +83,7 @@ function Header() {
                         </StyledHeader.UL>
                     </StyledHeader.NavHeader>
                 </StyledHeader.FlexHeader>
-            </StyledHeader.Header>
+        </motion.header>
         </>
     )
 };

@@ -3,19 +3,27 @@ import LinkHookRouter from "../linkHookRouter";
 import { motion } from "framer-motion";
 
 function HomePage () {
+
     return (
         <>
         <styledHome.sectionHome id='home'>
             <styledHome.flexMain>
 
+                <motion.div
+                initial={{opacity: 0, x: 300}}
+                animate={{opacity: 1, x: 1}}
+                exit={{opacity: 0, x: 300}}
+                transition={{duration: 0.8, delay: 0.4}}
+                >
                 <styledHome.imgBox>
                 </styledHome.imgBox>
+                </motion.div>
             
                  <motion.div
-                    initial={{opacity: 0, x: -500}}
+                    initial={{opacity: 0, x: 300}}
                     whileInView={{opacity: 1, x: 1}}
-                    exit={{opacity: 0, x: -1000}}
-                    transition={{duration: 0.5}}
+                    exit={{opacity: 0, x: 300}}
+                    transition={{duration: 0.8, delay: 0.2}}
                     >
                 <styledHome.contentMain>
 

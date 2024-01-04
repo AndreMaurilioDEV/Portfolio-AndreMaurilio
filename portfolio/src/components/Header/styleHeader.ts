@@ -6,6 +6,7 @@ const Header = styled.header`
     top: 0;
     width: 100%;
     background-color: black;
+    z-index: 1000;
 `
 
 const FlexHeader = styled.div`
@@ -23,7 +24,7 @@ const TitleHeader = styled.h1`
     color: #666af6;
 `
 
-const NavHeader = styled.div`
+const NavHeader = styled.nav`
 
 `
 
@@ -46,6 +47,7 @@ const LI = styled.li`
         border-bottom: 3px solid #515151;
         transition: border-bottom-color 0.8s ease;
         color: white;
+        cursor: pointer;
     }
 
     a {

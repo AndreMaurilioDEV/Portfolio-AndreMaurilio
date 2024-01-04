@@ -25,7 +25,7 @@ function Experience() {
                 initial={{opacity: 0, x: -1000}}
                 whileInView={{opacity: 1, x: 1}}
                 exit={{opacity: 0, x: -1000}}
-                transition={{duration: 0.5}}
+                transition={{duration: 0.8}}
                 >
                 <styledExperience.containerCards>
                 <styledExperience.card>
